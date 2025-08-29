@@ -1,6 +1,8 @@
-# Serbian Real Estate ETL Project
+# Real Estate Data Analysis
 
-This project demonstrates an ETL pipeline for analyzing Serbian real estate data. It fetches data from **Kaggle**, processes it using Python and SQL, and stores it in a **PostgreSQL** database. Analytical **SQL views** are created to extract insights such as 10 cheapest 4-bedroom properties for my two favorite cities, 10 most expensive properties, 10 most cheapest properties and more.
+This project implements a comprehensive ETL (Extract, Transform, Load) pipeline to analyze real estate data. It automates the entire process, from fetching raw data to generating valuable analytical insights. The pipeline fetches a dataset from Kaggle, cleans and processes it with Python and SQL, and stores the final data in a PostgreSQL database.
+
+It fetches data from **Kaggle**, processes it using Python and SQL, and stores it in a **PostgreSQL** database. Analytical **SQL views** are created to extract insights such as 10 cheapest 4-bedroom properties for my two favorite cities, 10 most expensive properties, 10 most cheapest properties and more.
 
 ## **Project Structure**
 
@@ -19,48 +21,23 @@ This project demonstrates an ETL pipeline for analyzing Serbian real estate data
 
 ## Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/brankowss/Real-Estate-ETL
-   cd Real-Estate-ETL
-   ```
-2. **Create a virtual environment**:
+1. **Create a virtual environment**:
     ```bash
     python3 -m venv venv
     source venv/bin/activate  # On Linux/Mac
     venv\Scripts\activate     # On Windows
     ```
-3. **Install dependencies**:
+2. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-4. **Start program**:
+3. **Start program**:
     ```bash
     python3 run_etl.py
     ``` 
 
-## Setup
-
-Before running the project, you need to sign up and configure your KaggleAPI token.
-
-### 1. Setting Up the Kaggle API Token
-
-Sign up for a free Kaggle account: Kaggle(https://www.kaggle.com/).
-Go to Account Settings and select Create New API Token to download kaggle.json.
-Move the kaggle.json file to the correct location:
-
-```bash
-# On Linux/Mac
-mkdir -p ~/.kaggle 
-mv /path/to/kaggle.json ~/.kaggle/
-chmod 600 ~/.kaggle/kaggle.json
-
-# On Windows
-mkdir $HOME\.kaggle
-Move-Item -Path .\Downloads\kaggle.json -Destination $HOME\.kaggle\
-``` 
-### 2. Setting Up PostgreSQL
+### Setting Up PostgreSQL
 
 Install PostgreSQL: Download PostgreSQL(https://www.postgresql.org/download/).
 
