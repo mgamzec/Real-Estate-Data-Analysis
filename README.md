@@ -1,6 +1,6 @@
 # Real Estate Data Analysis
 
-<img width="768" height="768" alt="image" src="https://github.com/user-attachments/assets/91cd1f3b-22a6-47ef-8fdd-eaf2950ee11e" />
+<img width="1650" height="1083" alt="image" src="https://github.com/user-attachments/assets/c9a3c7ba-5733-4e26-8106-51b062e4527f" />
 
 
 This project implements a comprehensive ETL (Extract, Transform, Load) pipeline to analyze real estate data. It automates the entire process, from fetching raw data to generating valuable analytical insights. The pipeline fetches a dataset from Kaggle, cleans and processes it with Python and SQL, and stores the final data in a PostgreSQL database.
